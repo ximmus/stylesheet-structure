@@ -243,3 +243,76 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* line 13, ../sass/global/_baseline.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 18, ../sass/global/_baseline.scss */
+body {
+  font-size: 133.33333;
+}
+
+/* line 22, ../sass/global/_baseline.scss */
+html > body {
+  font-size: 12px;
+}
+
+/* line 26, ../sass/global/_baseline.scss */
+p {
+  font-size: 1em;
+  line-height: 18px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+/* line 33, ../sass/global/_baseline.scss */
+h1 {
+  font-size: 1.4em;
+  line-height: 36px;
+  margin-bottom: 18px;
+}
+
+/* line 39, ../sass/global/_baseline.scss */
+h2 {
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 18px;
+}
+
+/* line 45, ../sass/global/_baseline.scss */
+h3 {
+  font-size: .7em;
+  line-height: 18px;
+}
+
+/* line 50, ../sass/global/_baseline.scss */
+ul, ol {
+  margin-bottom: 18px;
+}
+
+/* line 54, ../sass/global/_baseline.scss */
+.left {
+  float: left;
+  margin: 0 18px 18px 0;
+}
+
+/* line 59, ../sass/global/_baseline.scss */
+.right {
+  float: right;
+  margin: 0 0 18px 18px;
+}
+
+/* line 64, ../sass/global/_baseline.scss */
+.callout {
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+  margin-bottom: 18px;
+}
+
+/* line 70, ../sass/global/_baseline.scss */
+.callout :last-child {
+  margin-bottom: 0;
+}

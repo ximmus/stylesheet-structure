@@ -1,0 +1,72 @@
+  ///////////////////
+ // baseline grid //
+///////////////////
+
+// multiples of 18px
+
+// LOGIC-seperate once complete
+// variables
+$default: 16px; // this is the defualt body font-size for most browsers
+$body: 12px; // desired body font-size
+$base: $body * 1.5; // this is the desired line-height ( usually 150% ) and our baseline unit
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: ( $default / $body ) * 100; // percentage for IE6 and under 
+}
+
+html > body {
+  font-size: $body; // all other browsers
+}
+
+p {
+  font-size: 1em;
+  line-height: $base;
+  margin-top: $base;
+  margin-bottom: $base;
+}
+
+h1 {
+  font-size: 1.4em; // font size doesn't have to be multiple of base
+  line-height: 2 * $base; // 18px x 2 = 36px 
+  margin-bottom: $base;
+}
+
+h2 {
+  font-size: $base;
+  line-height: $base;
+  margin-bottom: $base;
+}
+
+h3 {
+  font-size: .7em;
+  line-height: $base;
+}
+
+ul, ol {
+  margin-bottom: $base;
+}
+
+.left {
+  float: left;
+  margin: 0 $base $base 0;
+}
+
+.right {
+  float: right;
+  margin: 0 0 $base $base;
+}
+
+.callout {
+  border: 1px solid #ddd;
+  padding: 8px 10px; // ( padding+border = 8+8+1+1 = 18 )
+  margin-bottom: $base;
+}
+
+.callout :last-child {
+  margin-bottom: 0;
+}
