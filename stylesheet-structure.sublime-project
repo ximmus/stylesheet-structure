@@ -10,7 +10,6 @@
       "*.sublime-workspace",
       "fire_app_log.txt",
       ".gitignore",
-      "readme.md",
       ".gitattributes"
       ],
     "folder_exclude_patterns":
