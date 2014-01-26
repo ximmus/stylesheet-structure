@@ -244,75 +244,76 @@ table {
   border-spacing: 0;
 }
 
-/* line 13, ../sass/global/_baseline.scss */
+/* line 6, ../sass/global/_baseline.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 18, ../sass/global/_baseline.scss */
+/* line 11, ../sass/global/_baseline.scss */
 body {
-  font-size: 133.33333;
+  font-size: 75%;
 }
 
-/* line 22, ../sass/global/_baseline.scss */
+/* line 15, ../sass/global/_baseline.scss */
 html > body {
   font-size: 12px;
 }
 
-/* line 26, ../sass/global/_baseline.scss */
+/* line 19, ../sass/global/_baseline.scss */
 p {
   font-size: 1em;
-  line-height: 18px;
-  margin-top: 18px;
-  margin-bottom: 18px;
+  line-height: 1.125em;
+  margin-top: 1.125em;
+  margin-bottom: 1.125em;
+}
+
+/* line 26, ../sass/global/_baseline.scss */
+h1 {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 /* line 33, ../sass/global/_baseline.scss */
-h1 {
-  font-size: 1.4em;
-  line-height: 36px;
-  margin-bottom: 18px;
+h2 {
+  font-size: 1.1667em;
+  line-height: 1.125em;
+  margin-bottom: 1.125em;
 }
 
 /* line 39, ../sass/global/_baseline.scss */
-h2 {
-  font-size: 18px;
-  line-height: 18px;
-  margin-bottom: 18px;
-}
-
-/* line 45, ../sass/global/_baseline.scss */
 h3 {
   font-size: .7em;
-  line-height: 18px;
+  line-height: 1.125em;
 }
 
-/* line 50, ../sass/global/_baseline.scss */
+/* line 44, ../sass/global/_baseline.scss */
 ul, ol {
-  margin-bottom: 18px;
+  margin-bottom: 1.125em;
 }
 
-/* line 54, ../sass/global/_baseline.scss */
+/* line 48, ../sass/global/_baseline.scss */
 .left {
   float: left;
-  margin: 0 18px 18px 0;
+  margin: 0 1.125em 1.125em 0;
 }
 
-/* line 59, ../sass/global/_baseline.scss */
+/* line 53, ../sass/global/_baseline.scss */
 .right {
   float: right;
-  margin: 0 0 18px 18px;
+  margin: 0 0 1.125em 1.125em;
 }
 
-/* line 64, ../sass/global/_baseline.scss */
+/* line 58, ../sass/global/_baseline.scss */
 .callout {
   border: 1px solid #ddd;
   padding: 8px 10px;
-  margin-bottom: 18px;
+  margin-bottom: 1.125em;
 }
 
-/* line 70, ../sass/global/_baseline.scss */
+/* line 64, ../sass/global/_baseline.scss */
 .callout :last-child {
   margin-bottom: 0;
 }

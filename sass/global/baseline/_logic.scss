@@ -1,0 +1,30 @@
+// baseline function
+@function baseline( $body-text, $args ) {
+     // strip units
+    $body-text: $body-text / ($body-text * 0 + 1);
+    
+    // body font size in percent
+    @if $args == 'percent'{
+      @return ( $body-text / 16 ) * 100%;
+    }
+
+    // body font size in ems
+    @if $args == 'em'{
+      @return ( $body-text / 16 ) * 1em;
+    }
+
+    // baseline unit ( line-height )
+    @if $args == 'baseline' {
+      @return (( $body-text / 16 ) * 1em) * 1.5;
+    }    
+}
+
+// variables
+
+$body-text: 12px;
+
+$body: baseline( $body-text, em );
+
+$body-ie: baseline( $body-text, percent ); // percentage for IE6 and under
+
+$base: baseline( $body-text, baseline );
