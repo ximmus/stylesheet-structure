@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 /* line 18, ../sass/global/reset/_html5-display.scss */
 article,
 aside,
@@ -59,12 +60,6 @@ a:focus {
 a:active,
 a:hover {
   outline: 0;
-}
-
-/* line 7, ../sass/global/reset/_typography.scss */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
 }
 
 /* line 14, ../sass/global/reset/_typography.scss */
@@ -252,68 +247,52 @@ table {
 
 /* line 11, ../sass/global/_baseline.scss */
 body {
-  font-size: 75%;
+  font-size: 87.5%;
 }
 
 /* line 15, ../sass/global/_baseline.scss */
 html > body {
-  font-size: 12px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
 }
 
-/* line 19, ../sass/global/_baseline.scss */
+/* line 20, ../sass/global/_baseline.scss */
 p {
   font-size: 1em;
-  line-height: 1.125em;
-  margin-top: 1.125em;
-  margin-bottom: 1.125em;
+  line-height: 1.2857142;
+  margin-top: 1.2857142em;
+  margin-bottom: 1.2857142em;
 }
 
-/* line 26, ../sass/global/_baseline.scss */
+/* line 27, ../sass/global/_baseline.scss */
 h1 {
-  font-size: 1.5em;
-  line-height: 1em;
-  margin-top: 0;
-  margin-bottom: 1em;
+  font-size: 3em;
+  line-height: 1.2857142;
+  margin-bottom: 0.4285714em;
 }
 
 /* line 33, ../sass/global/_baseline.scss */
 h2 {
-  font-size: 1.1667em;
-  line-height: 1.125em;
-  margin-bottom: 1.125em;
+  font-size: 2.25em;
+  line-height: 1.1428571;
+  margin-bottom: 0.5714285em;
 }
 
 /* line 39, ../sass/global/_baseline.scss */
 h3 {
-  font-size: .7em;
-  line-height: 1.125em;
+  font-size: 1.175em;
+  line-height: 1.0942249;
+  margin-bottom: 1.0942249em;
 }
 
-/* line 44, ../sass/global/_baseline.scss */
-ul, ol {
-  margin-bottom: 1.125em;
+/* line 45, ../sass/global/_baseline.scss */
+h4 {
+  font-size: 1.125em;
+  line-height: 1.1428571;
+  margin-bottom: 1.1428571em;
 }
 
-/* line 48, ../sass/global/_baseline.scss */
-.left {
-  float: left;
-  margin: 0 1.125em 1.125em 0;
-}
-
-/* line 53, ../sass/global/_baseline.scss */
-.right {
-  float: right;
-  margin: 0 0 1.125em 1.125em;
-}
-
-/* line 58, ../sass/global/_baseline.scss */
-.callout {
-  border: 1px solid #ddd;
-  padding: 8px 10px;
-  margin-bottom: 1.125em;
-}
-
-/* line 64, ../sass/global/_baseline.scss */
-.callout :last-child {
-  margin-bottom: 0;
-}
+/* 
+TODO:
+- Top margins (margin colapse yo!)
+*/

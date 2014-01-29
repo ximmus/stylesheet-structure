@@ -13,54 +13,42 @@ body {
 }
 
 html > body {
-  font-size: $body-text; // all other browsers
+  font-size: $body; // all other browsers
+  font-family: $fontface;
 }
 
 p {
   font-size: 1em;
-  line-height: $base;
-  margin-top: $base;
-  margin-bottom: $base;
+  line-height: 1.2857142;
+  margin-top: 1.2857142em;
+  margin-bottom: 1.2857142em;
 }
 
 h1 {
-  font-size: 1.5em; // font size doesn't have to be multiple of base
-  line-height: 1em; // 18px x 2 = 36px
-  margin-top: 0; 
-  margin-bottom: 1em;
+  font-size: 3em;
+  line-height: 1.2857142;
+  margin-bottom: 0.4285714em;
 }
 
 h2 {
-  font-size: 1.1667em;
-  line-height: $base;
-  margin-bottom: $base;
+  font-size: 2.25em;
+  line-height: 1.1428571;
+  margin-bottom: 0.5714285em;
 }
 
 h3 {
-  font-size: .7em;
-  line-height: $base;
+  font-size: 1.175em;
+  line-height: 1.0942249;
+  margin-bottom: 1.0942249em;
 }
 
-ul, ol {
-  margin-bottom: $base;
+h4 {
+  font-size: 1.125em;
+  line-height: 1.1428571;
+  margin-bottom: 1.1428571em;
 }
 
-.left {
-  float: left;
-  margin: 0 $base $base 0;
-}
-
-.right {
-  float: right;
-  margin: 0 0 $base $base;
-}
-
-.callout {
-  border: 1px solid #ddd;
-  padding: 8px 10px; // ( padding+border = 8+8+1+1 = 18 )
-  margin-bottom: $base;
-}
-
-.callout :last-child {
-  margin-bottom: 0;
-}
+/* 
+TODO:
+- Top margins (margin colapse yo!)
+*/

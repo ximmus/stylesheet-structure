@@ -1,30 +1,21 @@
-// baseline function
-@function baseline( $body-text, $args ) {
-     // strip units
-    $body-text: $body-text / ($body-text * 0 + 1);
-    
-    // body font size in percent
-    @if $args == 'percent'{
-      @return ( $body-text / 16 ) * 100%;
-    }
+// web font -'Open Sans'
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 
-    // body font size in ems
-    @if $args == 'em'{
-      @return ( $body-text / 16 ) * 1em;
-    }
+// strip units
+@function strip( $unit ) {
+  @return $unit / ($unit * 0 + 1);
+}
 
-    // baseline unit ( line-height )
-    @if $args == 'baseline' {
-      @return (( $body-text / 16 ) * 1em) * 1.5;
-    }    
+// Ratio Function
+@function ratio ( $initial, $multiple ) {
+  @for $i from 1 through $multiple {
+    $initial: ( $initial * 1.425 );
+  }
+  @return $initial;  
 }
 
 // variables
-
-$body-text: 12px;
-
-$body: baseline( $body-text, em );
-
-$body-ie: baseline( $body-text, percent ); // percentage for IE6 and under
-
-$base: baseline( $body-text, baseline );
+$fontface: 'Open Sans', sans-serif;
+$body: 14px;
+$base: ratio( $body, 1 );
+$body-ie: percentage( strip( $body ) / 16 ); // percentage for IE6 and under
