@@ -1,39 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
-/* line 52, ../sass/global/_media-queries.scss */
-.line-length {
-  display: block;
-  float: left;
-}
-/* line 55, ../sass/global/_media-queries.scss */
-.line-length:after {
-  content: repeat("X", 20);
-}
-@media (max-width: 70em) {
-  /* line 55, ../sass/global/_media-queries.scss */
-  .line-length:after {
-    content: repeat("X", 75);
-    color: red;
-  }
-}
-@media (max-width: 50em) {
-  /* line 55, ../sass/global/_media-queries.scss */
-  .line-length:after {
-    content: repeat("X", 50);
-    color: blue;
-  }
-}
-@media (max-width: 30em) {
-  /* line 55, ../sass/global/_media-queries.scss */
-  .line-length:after {
-    content: repeat("X", 35);
-    color: green;
-  }
-}
-/* line 70, ../sass/global/_media-queries.scss */
-.line-length::first-letter {
-  color: red;
-}
-
 /* line 18, ../sass/global/reset/_html5-display.scss */
 article,
 aside,
@@ -282,12 +247,12 @@ table {
 
 /* line 11, ../sass/global/_baseline.scss */
 body {
-  font-size: 100%;
+  font-size: 87.5%;
 }
 
 /* line 15, ../sass/global/_baseline.scss */
 html > body {
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -298,108 +263,83 @@ p {
   margin-top: 1.2857142em;
   margin-bottom: 1.2857142em;
 }
+@media (max-width: 30em) {
+  /* line 20, ../sass/global/_baseline.scss */
+  p {
+    font-size: 0.8571428em;
+    line-height: 1.5;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+}
 
-/* line 34, ../sass/global/_baseline.scss */
+/* line 33, ../sass/global/_baseline.scss */
 h1 {
   font-size: 3em;
   line-height: 1.2857142;
+  margin-top: 0.4285714em;
   margin-bottom: 0.4285714em;
 }
 @media (max-width: 70em) {
-  /* line 34, ../sass/global/_baseline.scss */
+  /* line 33, ../sass/global/_baseline.scss */
   h1 {
     font-size: 2.5em;
+    line-height: 1.0285714;
+    margin-top: 0.5142857em;
+    margin-bottom: 0.5142857em;
   }
 }
 @media (max-width: 30em) {
-  /* line 34, ../sass/global/_baseline.scss */
+  /* line 33, ../sass/global/_baseline.scss */
   h1 {
     font-size: 2em;
+    line-height: 1.2857142;
+    margin-top: 0.6428571em;
+    margin-bottom: 0.6428571em;
   }
 }
 
-/* line 47, ../sass/global/_baseline.scss */
+/* line 53, ../sass/global/_baseline.scss */
 h2 {
   font-size: 2.25em;
   line-height: 1.1428571;
   margin-bottom: 0.5714285em;
 }
 @media (max-width: 70em) {
-  /* line 47, ../sass/global/_baseline.scss */
+  /* line 53, ../sass/global/_baseline.scss */
   h2 {
     font-size: 2em;
   }
 }
 @media (max-width: 30em) {
-  /* line 47, ../sass/global/_baseline.scss */
+  /* line 53, ../sass/global/_baseline.scss */
   h2 {
-    font-size: 1.265em;
+    font-size: 1.8em;
   }
 }
 
-/* line 60, ../sass/global/_baseline.scss */
+/* line 66, ../sass/global/_baseline.scss */
 h3 {
   font-size: 1.175em;
   line-height: 1.0942249;
   margin-bottom: 1.0942249em;
 }
 @media (max-width: 70em) {
-  /* line 60, ../sass/global/_baseline.scss */
+  /* line 66, ../sass/global/_baseline.scss */
   h3 {
-    font-size: 1.5em;
+    font-size: 1.15em;
   }
 }
 @media (max-width: 30em) {
-  /* line 60, ../sass/global/_baseline.scss */
+  /* line 66, ../sass/global/_baseline.scss */
   h3 {
-    font-size: 1.375em;
+    font-size: 1.1em;
   }
 }
 
-/* line 73, ../sass/global/_baseline.scss */
+/* line 79, ../sass/global/_baseline.scss */
 h4 {
   font-size: 1.125em;
   line-height: 1.1428571;
   margin-bottom: 1.1428571em;
 }
-
-/* line 81, ../sass/global/_baseline.scss */
-.alphabet {
-  display: block;
-  float: left;
-}
-/* line 84, ../sass/global/_baseline.scss */
-.alphabet:after {
-  content: "XXXXXXXXXXXXXXXXXXXX";
-}
-@media (max-width: 70em) {
-  /* line 84, ../sass/global/_baseline.scss */
-  .alphabet:after {
-    content: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-    color: red;
-  }
-}
-@media (max-width: 50em) {
-  /* line 84, ../sass/global/_baseline.scss */
-  .alphabet:after {
-    content: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-    color: blue;
-  }
-}
-@media (max-width: 30em) {
-  /* line 84, ../sass/global/_baseline.scss */
-  .alphabet:after {
-    content: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-    color: green;
-  }
-}
-/* line 99, ../sass/global/_baseline.scss */
-.alphabet::first-letter {
-  color: red;
-}
-
-/* 
-TODO:
-- Top margins (margin colapse yo!)
-- Media Queries: read the artical in pocket
-*/

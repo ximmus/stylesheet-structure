@@ -6,6 +6,7 @@
   @return $unit / ($unit * 0 + 1);
 }
 
+// repeating function
 @function repeat( $pete, $repeat ) {
   $i: 0;
   $petes: ''; // initiate empty variable
@@ -18,5 +19,5 @@
 
 // variables
 $fontface: 'Open Sans', sans-serif;
-$body: 16px;
+$body: 14px;
 $body-ie: percentage( strip( $body ) / 16 ); // percentage for IE6 and under

@@ -2,6 +2,30 @@
  // media queries //
 ///////////////////
 
+// BreakPoints
+@mixin bp( $point ) {
+  @if $point == tablet {
+    @media ( max-width: 70em ) { @content; }
+  }
+  @else if $point == tablet-small {
+    @media ( max-width: 50em )  { @content; }
+  }
+  @else if $point == phone {
+    @media ( max-width: 30em )  { @content; }
+  }
+}
+
+// to use:
+// .class {
+//   width: 33.33%;
+//   @include bp(phone) {
+//     width: 100%;
+//   }
+// }
+
+//-------------------->
+// Breakpoint Math:
+// ------------------->
 // desktop large
 /// line-length = 42.3em
 /// include two sidebars (maximum line-lengths)
@@ -27,47 +51,29 @@
 /// line-length = 35ch = 19.7em
 /// padding = 1em + 1em = 21.7em
 
-// BreakPoints
-@mixin bp( $point ) {
-  @if $point == tablet {
-    @media ( max-width: 70em ) { @content; }
-  }
-  @else if $point == tablet-small {
-    @media ( max-width: 50em )  { @content; }
-  }
-  @else if $point == phone {
-    @media ( max-width: 30em )  { @content; }
-  }
-}
-
-// to use
-// .sidebar {
-//   width: 33.33%;
-//   @include bp(phone) {
-//     width: 100%;
-//   }
-// }
-
+//------------------------>
 // line-length tool
-.line-length {
-  display: block;
-  float: left;
-  &:after {
-    content: repeat('X', 20); // defualt
-    @include bp( tablet ) {
-      content: repeat('X', 75);
-      color: red;
-    }
-    @include bp( tablet-small ) {
-      content: repeat('X', 50);
-      color: blue;
-    }
-    @include bp( phone ) {
-      content: repeat('X', 35);
-      color: green;
-    }
-  }
-  &::first-letter {
-    color: red;
-  }
-}
+//------------------------>
+
+//.line-length {
+//  display: block;
+//  float: left;
+//  &:after {
+//    content: repeat('X', 20); // defualt
+//    @include bp( tablet ) {
+//      content: repeat('X', 75);
+//      color: red;
+//    }
+//    @include bp( tablet-small ) {
+//      content: repeat('X', 50);
+//      color: blue;
+//    }
+//    @include bp( phone ) {
+//      content: repeat('X', 35);
+//      color: green;
+//    }
+//  }
+//  &::first-letter {
+//    color: red;
+//  }
+//}
