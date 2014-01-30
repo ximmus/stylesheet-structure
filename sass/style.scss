@@ -4,8 +4,11 @@
 
 // GLOBAL //
 
-// reset
+/// media-queries
+@import 'global/media-queries';
+
+/// reset
 @import 'global/reset';
 
-// baseline grid
+/// baseline grid
 @import 'global/baseline';

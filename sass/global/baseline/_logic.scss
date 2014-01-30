@@ -6,7 +6,17 @@
   @return $unit / ($unit * 0 + 1);
 }
 
+@function repeat( $pete, $repeat ) {
+  $i: 0;
+  $petes: ''; // initiate empty variable
+  @while $i < $repeat {
+    $petes: $petes + $pete;
+    $i: $i + 1;
+  }
+  @return $petes;
+}
+
 // variables
 $fontface: 'Open Sans', sans-serif;
-$body: 10px;
+$body: 16px;
 $body-ie: percentage( strip( $body ) / 16 ); // percentage for IE6 and under

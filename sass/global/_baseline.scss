@@ -22,24 +22,52 @@ p {
   line-height: 1.2857142;
   margin-top: 1.2857142em;
   margin-bottom: 1.2857142em;
+  // breakpoints
+  @include bp( tablet ) {
+  }
+  @include bp( tablet-small ) {
+  }
+  @include bp( phone ) {
+  }
 }
 
 h1 {
   font-size: 3em;
   line-height: 1.2857142;
   margin-bottom: 0.4285714em;
+  // breakpoints
+  @include bp( tablet ) {
+    font-size: 2.5em;
+  }
+  @include bp( phone ) {
+    font-size: 2em;
+  }
 }
 
 h2 {
   font-size: 2.25em;
   line-height: 1.1428571;
   margin-bottom: 0.5714285em;
+  // breakpoints
+  @include bp( tablet ) {
+    font-size: 2em;
+  }
+  @include bp( phone ) {
+    font-size: 1.265em;
+  }
 }
 
 h3 {
   font-size: 1.175em;
   line-height: 1.0942249;
   margin-bottom: 1.0942249em;
+  // breakpoints
+  @include bp( tablet ) {
+    font-size: 1.5em;
+  }
+  @include bp( phone ) {
+    font-size: 1.375em;
+  }
 }
 
 h4 {
@@ -47,6 +75,34 @@ h4 {
   line-height: 1.1428571;
   margin-bottom: 1.1428571em;
 }
+
+// line-height: 120-145% of font-size
+// line-length: 2-3 lowercase alphabets
+.alphabet {
+  display: block;
+  float: left;
+  &:after {
+    content: repeat('X', 20); // defualt
+    @include bp( tablet ) {
+      content: repeat('X', 75);
+      color: red;
+    }
+    @include bp( tablet-small ) {
+      content: repeat('X', 50);
+      color: blue;
+    }
+    @include bp( phone ) {
+      content: repeat('X', 35);
+      color: green;
+    }
+  }
+  &::first-letter {
+    color: red;
+  }
+}
+
+
+
 
 /* 
 TODO:

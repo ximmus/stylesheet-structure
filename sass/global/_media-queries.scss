@@ -3,35 +3,71 @@
 ///////////////////
 
 // desktop large
+/// line-length = 42.3em
+/// include two sidebars (maximum line-lengths)
+/// width:
+//// sidebar + sidebar + main (max)
+//// 40ch + 40ch + 75ch = 156ch = 87.8em
 
 // desktop (defualt)
+/// line-length = 42.3em 
+/// include two sidebars (minimum line-lengths)
+/// width: 
+//// sidebar + sidebar + main (mins)
+//// 35ch + 35ch + 60ch = 130ch = 73.2em
 
-// tablet
+// tablet: 
+/// line-length = 75ch = 42.2em
 
-// tablet small
+// tablet small:
+/// line-length = 50ch = 28.2em
+/// padding = 1em + 1em = 30.2em
 
-// phone
+// phone:
+/// line-length = 35ch = 19.7em
+/// padding = 1em + 1em = 21.7em
 
-
-@mixin bp($point) {
-  @if $point == desktop-large {
-    @media (max-width: 1600px) { @content; }
-  }
-  @else if $point == tablet {
-    @media (max-width: 1250px) { @content; }
+// BreakPoints
+@mixin bp( $point ) {
+  @if $point == tablet {
+    @media ( max-width: 70em ) { @content; }
   }
   @else if $point == tablet-small {
-    @media (max-width: 600px)  { @content; }
+    @media ( max-width: 50em )  { @content; }
   }
   @else if $point == phone {
-    @media (max-width: 600px)  { @content; }
+    @media ( max-width: 30em )  { @content; }
   }
 }
 
+// to use
+// .sidebar {
+//   width: 33.33%;
+//   @include bp(phone) {
+//     width: 100%;
+//   }
+// }
 
-.sidebar {
-  width: 33.33%;
-  @include bp(phone) {
-    width: 100%;
+// line-length tool
+.line-length {
+  display: block;
+  float: left;
+  &:after {
+    content: repeat('X', 20); // defualt
+    @include bp( tablet ) {
+      content: repeat('X', 75);
+      color: red;
+    }
+    @include bp( tablet-small ) {
+      content: repeat('X', 50);
+      color: blue;
+    }
+    @include bp( phone ) {
+      content: repeat('X', 35);
+      color: green;
+    }
+  }
+  &::first-letter {
+    color: red;
   }
 }
