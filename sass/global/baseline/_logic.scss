@@ -6,16 +6,7 @@
   @return $unit / ($unit * 0 + 1);
 }
 
-// Ratio Function
-@function ratio ( $initial, $multiple ) {
-  @for $i from 1 through $multiple {
-    $initial: ( $initial * 1.425 );
-  }
-  @return $initial;  
-}
-
 // variables
 $fontface: 'Open Sans', sans-serif;
-$body: 14px;
-$base: ratio( $body, 1 );
+$body: 10px;
 $body-ie: percentage( strip( $body ) / 16 ); // percentage for IE6 and under

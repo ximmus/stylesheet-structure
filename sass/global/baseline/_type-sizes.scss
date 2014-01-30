@@ -1,0 +1,167 @@
+body {
+  .print {
+    font-size: 12pt;
+    line-height: 1.25em;
+    // Charcters (line-length): 60-75
+  }
+  .desktop-large {
+    font-size: 1em; // 16px
+    line-height: 1.375em;
+    // Charcters (line-length): 60-75
+  }
+  .desktop {
+    font-size: 1em; // 16px
+    line-height: 1.375em;
+    // Charcters (line-length): 60-75
+  }
+  .tablet {
+    font-size: 1em; // 16px
+    line-height: 1.375em;
+    // Charcters (line-length): 60-75
+  }
+  .tablet-small {
+    font-size: 1em; // 16px
+    line-height: 1.25em;
+    // Charcters (line-length): 60-75
+  }
+  .phone {
+    font-size: 1em; // 16px
+    line-height: 1.25em;
+    // Charcters (line-length): 60-75
+  }
+}
+
+h1 {
+  .print {
+    font-size: 36pt;
+    line-height: 1.25em;
+  }
+  .desktop-large {
+    font-size: 3em; // 48px
+    line-height: 1.05em;
+  }
+  .desktop {
+    font-size: 3em; // 16px
+    line-height: 1.05em;
+  }
+  .tablet {
+    font-size: 2.5em; // 40px
+    line-height: 1.125em;
+  }
+  .tablet-small {
+    font-size: 2em; // 16px
+    line-height: 1.25em;
+  }
+  .phone {
+    font-size: 2em; // 16px
+    line-height: 1.25em;
+  }
+}
+
+h2 {
+  .print {
+    font-size: 24pt;
+    line-height: 1.25em;
+  }
+  .desktop-large {
+    font-size: 2.25em; // 36px
+    line-height: 1.25em;
+  }
+  .desktop {
+    font-size: 2.25em; // 36px
+    line-height: 1.25em;
+  }
+  .tablet {
+    font-size: 2em; // 32px
+    line-height: 1.25em;
+  }
+  .tablet-small {
+    font-size: 1.625em; // 26px
+    line-height: 1.1538615em;
+  }
+  .phone {
+    font-size: 1.625em; // 26px
+    line-height: 1.1538615em;
+  }
+}
+
+h3 {
+  .print {
+    font-size: 18pt;
+    line-height: 1.25em;
+  }
+  .desktop-large {
+    font-size: 1.75em; // 28px
+    line-height: 1.25em;
+  }
+  .desktop {
+    font-size: 1.75em; // 28px
+    line-height: 1.25em;
+  }
+  .tablet {
+    font-size: 1.5em; // 24px
+    line-height: 1.25em;
+  }
+  .tablet-small {
+    font-size: 1.375em; // 22px
+    line-height: 1.13636364em;
+  }
+  .phone {
+    font-size: 1.375em; // 22px
+    line-height: 1.13636364em;
+  }
+}
+
+h4 {
+  .print {
+    font-size: 14pt;
+    line-height: 1.25em;
+  }
+  .desktop-large {
+    font-size: 1.125em; // 18px
+    line-height: 1.22222222em;
+  }
+  .desktop {
+    font-size: 1.125em; // 18px
+    line-height: 1.22222222em;
+  }
+  .tablet {
+    font-size: 1.125em; // 18px
+    line-height: 1.22222222em;
+  }
+  .tablet-small {
+    font-size: 1.125em; // 18px
+    line-height: 1.11111111em;
+  }
+  .phone {
+    font-size: 1.125em; // 18px
+    line-height: 1.11111111em;
+  }
+}
+
+blockquote {
+  .print {
+    font-size: 24pt;
+    line-height: 1.45833333em;
+  }
+  .desktop-large {
+    font-size: 1.5em; // 24px
+    line-height: 1.45833333em;
+  }
+  .desktop {
+    font-size: 1.5em; // 24px
+    line-height: 1.45833333em;
+  }
+  .tablet {
+    font-size: 1.5em; // 24px
+    line-height: 1.45833333em;
+  }
+  .tablet-small {
+    font-size: 1.25em; // 20px
+    line-height: 1.25em;
+  }
+  .phone {
+    font-size: 1.25em; // 20px
+    line-height: 1.25em;
+  }
+}

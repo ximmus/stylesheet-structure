@@ -9,7 +9,7 @@
 }
 
 body {
-  font-size: $body-ie; // percentage for IE6 an below
+  font-size: $body-ie; // percentage for IE6 and below
 }
 
 html > body {
@@ -51,4 +51,5 @@ h4 {
 /* 
 TODO:
 - Top margins (margin colapse yo!)
+- Media Queries: read the artical in pocket
 */

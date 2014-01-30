@@ -1,0 +1,37 @@
+  ///////////////////
+ // media queries //
+///////////////////
+
+// desktop large
+
+// desktop (defualt)
+
+// tablet
+
+// tablet small
+
+// phone
+
+
+@mixin bp($point) {
+  @if $point == desktop-large {
+    @media (max-width: 1600px) { @content; }
+  }
+  @else if $point == tablet {
+    @media (max-width: 1250px) { @content; }
+  }
+  @else if $point == tablet-small {
+    @media (max-width: 600px)  { @content; }
+  }
+  @else if $point == phone {
+    @media (max-width: 600px)  { @content; }
+  }
+}
+
+
+.sidebar {
+  width: 33.33%;
+  @include bp(phone) {
+    width: 100%;
+  }
+}

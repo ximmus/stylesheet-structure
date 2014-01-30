@@ -247,12 +247,12 @@ table {
 
 /* line 11, ../sass/global/_baseline.scss */
 body {
-  font-size: 87.5%;
+  font-size: 62.5%;
 }
 
 /* line 15, ../sass/global/_baseline.scss */
 html > body {
-  font-size: 14px;
+  font-size: 10px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -295,4 +295,5 @@ h4 {
 /* 
 TODO:
 - Top margins (margin colapse yo!)
+- Media Queries: read the artical in pocket
 */
