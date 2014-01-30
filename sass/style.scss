@@ -4,6 +4,9 @@
 
 // GLOBAL //
 
+// variables and imports
+@import 'global/imports-variables';
+
 /// media-queries
 @import 'global/media-queries';
 
@@ -12,3 +15,6 @@
 
 /// baseline grid
 @import 'global/baseline';
+
+// grid
+@import 'global/grid';

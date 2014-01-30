@@ -9,7 +9,7 @@
 }
 
 body {
-  font-size: $body-ie; // percentage for IE6 and below
+  font-size: percentage( strip( $body ) / 16 ); // percentage for IE6 and below
 }
 
 html > body {
